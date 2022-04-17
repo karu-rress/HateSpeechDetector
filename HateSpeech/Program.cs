@@ -1,6 +1,7 @@
 ﻿using HateSpeech;
 using System.Runtime.InteropServices;
 
+
 [DllImport("kernel32.dll", SetLastError = true)]
 static extern bool SetConsoleOutputCP(uint wCodePageID);
 
