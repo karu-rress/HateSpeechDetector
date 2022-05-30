@@ -53,7 +53,7 @@ public class HateSpeechClassifier
             return;
 
         Comment = comment;
-
+        
         genderInput = new() { Comments = Comment };
         biasInput = new() { Comments = Comment };
         hateInput = new() { Comments = Comment };
