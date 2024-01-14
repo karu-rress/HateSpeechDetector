@@ -32,13 +32,13 @@ public class HateSpeechClassifier
     public string? Comment { get; set; }
 
     private GenderBias.ModelInput genderInput;
-    private GenderBias.ModelOutput genderOutput;
+    public GenderBias.ModelOutput genderOutput { get;set;}
 
     private BiasModel.ModelInput biasInput;
-    private BiasModel.ModelOutput biasOutput;
+    public BiasModel.ModelOutput biasOutput;
 
     private HateModel.ModelInput hateInput;
-    private HateModel.ModelOutput hateOutput;
+    public HateModel.ModelOutput hateOutput;
 
     public bool HasGenderBias { get; private set; }
     public Bias BiasType { get; private set; }

@@ -24,7 +24,7 @@ namespace HateSpeechGui
             sb.AppendLine($"입력된 문장: {textBox1.Text}\n");
 
             if (classifier.HasGenderBias)
-                sb.AppendLine("성차별 표현이 포함되어 있습니다.");
+                sb.AppendLine($"성차별 표현이 포함되어 있습니다. ({classifier.genderOutput.Probability*100:0.00}%)");
 
             if (classifier.HasBias)
                 sb.AppendLine($"{classifier.BiasType} 타입의 차별 표현이 있습니다.");
